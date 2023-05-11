@@ -1,0 +1,25 @@
+
+
+/* Header top  */
+.header-top {
+    height: 66px;
+    background-color: #E9F6E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-top p {
+    font-size: 16px;
+    font-weight: 600;
+}
+.header-top div {
+    margin: 0 10px;
+}
+.header-top-left {
+    display: flex;
+    align-items: center;
+}
+.header-top-left img {
+    width: 25px;
+    height: 27.46px;
+}
