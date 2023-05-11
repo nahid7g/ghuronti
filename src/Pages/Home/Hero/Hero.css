@@ -1,0 +1,103 @@
+.hero-section {
+    height: 291px;
+    background-image: url('../../../assets/hero-bg.png');
+    background-size: cover;
+}
+.hero-container {
+    padding: 20px;
+}
+.hero-title {
+    margin: 0;
+    text-align: center;
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.tour-box {
+    margin: 0 auto;
+    position: relative;
+    width: 1105px;
+    height: 416px;
+    background: linear-gradient(180deg, rgba(230, 248, 255, 0.33) 0%, rgba(229, 248, 255, 0.33) 100%);
+    box-shadow: 0px 2px 12px rgba(25, 171, 227, 0.3);
+    border-radius: 42px;
+}
+.tours {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 42px 42px 0px 0px;
+    padding: 5px;
+}
+.tours div {
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+}
+.tours div p {
+    font-size: 20px;
+    line-height: 30px;
+}
+.tours img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+/* Destination searc form styles  */
+form {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form-control {
+    display: flex;
+    flex-direction: column;
+    width: 418px;
+    height: 60px;
+    padding-left: 10px;
+    background-color: #fff;
+    border: 1px solid #4AB449;
+    border-radius: 5px;
+    margin: 8px 3px;
+}
+.form-control label {
+    font-size: 16px;
+}
+.form-control input,.half-form-control input, .form-control select {
+    border: none;
+}
+.form-control-2 {
+    display: flex;
+}
+.half-form-control {
+    width: 209px;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #4AB449;
+    border-radius: 5px;
+    margin: 8px 3px;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+.searchBtn {
+    width: 236px;
+    height: 53px;
+    background: #19ABE3;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: none;
+    margin: 30px auto;
+    cursor: pointer;
+    color: #fff;
+    font: 18px;
+    line-height: 27px;
+}
+.whatsapp-icon {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    cursor: pointer;
+}
