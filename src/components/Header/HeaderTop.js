@@ -10,7 +10,7 @@ const HeaderTop = () => {
         <p>+88-01885-XXX-XXX</p>
       </div>
       <div>
-        <p>Contact Us</p>
+        <a href='/'>Contact Us</a>
       </div>
     </div>
   );

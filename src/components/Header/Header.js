@@ -1,11 +1,12 @@
 import React from 'react';
 import HeaderTop from './HeaderTop';
+import Navbar from './Navbar';
 
 const Header = () => {
   return (
     <header>
       <HeaderTop />
-      <h2>Welcome from Header</h2>
+      <Navbar />
     </header>
   );
 };

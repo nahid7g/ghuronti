@@ -1,4 +1,6 @@
-
+header a {
+    text-decoration: none;
+}
 
 /* Header top  */
 .header-top {
@@ -8,9 +10,10 @@
     justify-content: center;
     align-items: center;
 }
-.header-top p {
+.header-top p,.header-top a {
     font-size: 16px;
     font-weight: 600;
+    color: black;
 }
 .header-top div {
     margin: 0 10px;
@@ -22,4 +25,73 @@
 .header-top-left img {
     width: 25px;
     height: 27.46px;
+}
+
+/* Navbar styles  */
+nav {
+    background: #E5F8FF;
+    padding: 0 100px;
+    display: flex;
+}
+.navbar-left {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+.navbar-left img {
+    margin-right: 30px;
+}
+.navbar-left a {
+    font-size: 20px;
+    line-height: 30px;
+}
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+.navbar-right .searchbox {
+    margin: 0 31px;
+}
+.navbar-right input {
+    width: 433px;
+    height: 43px;
+    border: 1px solid #4AB449;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+.login-signup {
+    display: flex;
+}
+.navbar-right .nav-btn {
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.navbar-right a{
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+}
+.login-btn {
+    background-color: #4AB449;
+}
+.signup-btn {
+    background-color: #19ABE3;
+}
+.search-box {
+    position: relative;
+}
+.search-icon {
+    position:absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 15px;
+    background: rgba(74, 180, 73, 0.12);
 }
