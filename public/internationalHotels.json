@@ -1,0 +1,26 @@
+[
+    {
+        "name":"New York City Hotels",
+        "cost":184,
+        "stayFor":1,
+        "thumbnail":"../src/assets/ney-york.png"
+    },
+    {
+        "name":"Orlando Hotels",
+        "cost":155,
+        "stayFor":1,
+        "thumbnail":"../src/assets/orlando.png"
+    },
+    {
+        "name":"New Orleans Hotels",
+        "cost":184,
+        "stayFor":1,
+        "thumbnail":"./../src/assets/orleans.png"
+    },
+    {
+        "name":"New York City Hotels",
+        "cost":184,
+        "stayFor":1,
+        "thumbnail":"../src/assets/ney-york.png"
+    }
+]

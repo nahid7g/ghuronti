@@ -1,0 +1,23 @@
+.slides {
+    width: 1110px;
+    display: flex;
+    align-items: center;
+    height: 228px;
+    background: #E6F8FF;
+    border-radius: 5px;
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+} 
+.quote2 {
+    position: absolute;
+    top: -25%;
+    left: 5%;
+}
+.comment {
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "name":"Lemon Tree Siliguri",
+        "cost":153,
+        "stayFor":1,
+        "thumbnail":"../src/assets/shiliguri.png"
+    },
+    {
+        "name":"Euro Hostel Kerala",
+        "cost":43,
+        "stayFor":1,
+        "thumbnail": "./../src/assets/kerala.png"
+    },
+    {
+        "name":"Yotel Hotel Goa",
+        "cost":40,
+        "stayFor":1,
+        "thumbnail":"./../src/assets/yotel.png"
+    },
+    {
+        "name":"Lemon Tree Siliguri",
+        "cost":153,
+        "stayFor":1,
+        "thumbnail":"../src/assets/shiliguri.png"
+    }
+]
