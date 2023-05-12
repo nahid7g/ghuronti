@@ -18,9 +18,9 @@
         "thumbnail":"./../src/assets/yotel.png"
     },
     {
-        "name":"Lemon Tree Siliguri",
+        "name":"Hotel Radisson",
         "cost":153,
         "stayFor":1,
-        "thumbnail":"../src/assets/shiliguri.png"
+        "thumbnail":"../src/assets/radisson.png"
     }
 ]

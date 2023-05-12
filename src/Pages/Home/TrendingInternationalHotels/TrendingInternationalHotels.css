@@ -1,6 +1,10 @@
 .trending-i-hotel {
     margin-top: 280px;
 }
+.trending-international {
+    margin: 20px 0;
+    padding: 10px;
+}
 .trending-title {
     text-align: center;
     font-size: 36px;
@@ -14,9 +18,11 @@
 }
 .trending {
     display: flex;
-    justify-content: space-between;
-    margin:20px 0;
+    column-gap: 10px;
 }
-.trending div {
-    margin-right: 30px;
+.slider-arrow {
+    display: flex;
+    column-gap: 10px;
+    justify-content: end;
+    cursor: pointer;
 }

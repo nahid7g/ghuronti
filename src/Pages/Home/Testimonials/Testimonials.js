@@ -10,7 +10,7 @@ import quote2 from '../../../assets/quote2.png';
 
 const Testimonials = () => {
   return (
-    <section>
+    <section className='testimonials'>
       <h2 className='trending-title'>
         Customer satisfaction is our top priority
       </h2>
