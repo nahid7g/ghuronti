@@ -83,9 +83,11 @@ const Hero = () => {
                 <option value='7'>7</option>
               </select>
             </div>
-            <button className='searchBtn' type='submit'>
-              Search Hotels
-            </button>
+            <div className='search'>
+              <button className='searchBtn' type='submit'>
+                Search Hotels
+              </button>
+            </div>
           </form>
           {/* Social media icon  */}
           <div className='whatsapp-icon'>

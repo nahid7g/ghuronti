@@ -17,8 +17,8 @@
 .tour-box {
     margin: 0 auto;
     position: relative;
-    width: 1105px;
-    height: 416px;
+    max-width: 1105px;
+    min-height: 416px;
     background: linear-gradient(180deg, rgba(230, 248, 255, 0.33) 0%, rgba(229, 248, 255, 0.33) 100%);
     box-shadow: 0px 2px 12px rgba(25, 171, 227, 0.3);
     border-radius: 42px;
@@ -26,6 +26,7 @@
 .tours {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     background-color: #fff;
     border-radius: 42px 42px 0px 0px;
     padding: 5px;
@@ -50,7 +51,7 @@ form {
     margin: 10px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 .form-control {
     display: flex;
@@ -68,6 +69,10 @@ form {
 }
 .form-control input,.half-form-control input, .form-control select {
     border: none;
+}
+.search {
+    width: 100%;
+    display: flex;
 }
 .form-control-2 {
     display: flex;
@@ -101,3 +106,21 @@ form {
     right: 20px;
     cursor: pointer;
 }
+
+@media screen and (max-width:1312px) {
+    .tour-box {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    
+}
+
+/* 
+@media screen and (max-width:688px) {
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}  */

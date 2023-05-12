@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import logo from '../../assets/softypy-logo.png';
 import searchIcon from '../../assets/search-icon.png';
+import { FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
   return (
-    <nav>
+    <nav className='navbar'>
       <div className='navbar-left'>
         <div className='logo'>
           <img src={logo} alt='Logo' />
@@ -28,6 +30,25 @@ const Navbar = () => {
           <p className='nav-btn signup-btn'>
             <a href='/'>Sign Up</a>
           </p>
+        </div>
+        {/* Navbar Sm  */}
+        <div className='login-signup-sm'>
+          <div onClick={() => setToggle(!toggle)}>
+            <FaBars />
+          </div>
+          <nav className={toggle ? 'menu-sm showmenu' : 'menu-sm hidemenu'}>
+            <ul>
+              <li>
+                <a href='/'>Login</a>
+              </li>
+              <li>
+                <a href='/'>Register</a>
+              </li>
+              <li>
+                <input type='text' placeholder='Search Flight, Hotel, Visa' />
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </nav>

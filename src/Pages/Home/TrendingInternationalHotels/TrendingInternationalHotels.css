@@ -13,11 +13,10 @@
 }
 .info {
     width: 542px;
-    height: 40px;
+    min-height: 40px;
     margin: 0 auto;
 }
 .trending {
-    display: flex;
     column-gap: 10px;
 }
 .slider-arrow {
@@ -26,3 +25,25 @@
     justify-content: end;
     cursor: pointer;
 }
+
+@media screen and (max-width:1312px) {
+    .trending-i-hotel {
+        margin-top: 355px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .trending-i-hotel {
+        margin-top: 470px;
+    }
+    .info {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:688px) {
+   .trending-i-hotel {
+    margin-top: 520px;
+   }
+} 

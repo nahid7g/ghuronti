@@ -12,6 +12,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { Pagination } from 'swiper';
+
 const TrendingIndianHotels = () => {
   const indianHotels = [
     {
@@ -55,23 +57,32 @@ const TrendingIndianHotels = () => {
       <div className='trenging-indian'>
         <div className='trending'>
           <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
-            freeMode={true}
+            slidesPerView={1}
+            spaceBetween={10}
             pagination={{
               clickable: true,
             }}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+            }}
+            modules={[Pagination]}
             loop={true}
             className='mySwiper'
           >
             {indianHotels?.map((hotel) => (
-              <SwiperSlide>
+              <SwiperSlide key={hotel.id}>
                 <BookingCard
                   title={hotel.name}
                   stay={hotel.stayFor}
                   cost={hotel.cost}
                   thumbnail={hotel.thumbnail}
-                  key={hotel.id}
                 />
               </SwiperSlide>
             ))}

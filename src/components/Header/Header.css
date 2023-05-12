@@ -28,7 +28,7 @@ header a {
 }
 
 /* Navbar styles  */
-nav {
+.navbar {
     background: #E5F8FF;
     padding: 0 100px;
     display: flex;
@@ -47,7 +47,9 @@ nav {
 }
 .navbar-right {
     display: flex;
+    column-gap: 15px;
     align-items: center;
+    justify-content: center;
 }
 .navbar-right .searchbox {
     margin: 0 31px;
@@ -61,6 +63,42 @@ nav {
 }
 .login-signup {
     display: flex;
+}
+.login-signup-sm {
+    display: none;
+    border: none;
+    font-size: 28px;
+    position: relative;
+    cursor: pointer;
+    margin-top:4px;
+}
+.menu-sm {
+    position: absolute;
+    top: 0;
+    right: 70%;
+    z-index: 1;
+    display: none;
+    transition: 10000ms;
+}
+.showmenu {
+    display: block;
+}
+.hidemenu {
+    display: none;
+}
+.menu-sm li {
+    background-color:#E9F6E9;
+    list-style: none;
+    padding: 10px;
+}
+.menu-sm li:hover {
+    background-color: gray;
+}
+.menu-sm li a {
+    color: #000;
+}
+.login-signup-sm button {
+    border: none;
 }
 .navbar-right .nav-btn {
     font-size: 16px;
@@ -95,3 +133,27 @@ nav {
     padding: 0 15px;
     background: rgba(74, 180, 73, 0.12);
 }
+
+@media screen and (max-width:1312px) {
+    .navbar-right input {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:992px) {
+        .search-box {
+            display: none;
+        }
+        .login-signup {
+            display: none;
+        }
+        .login-signup-sm {
+            display: inline-flex;
+        }
+    }
+/* 
+@media screen and (max-width:688px) {
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}  */

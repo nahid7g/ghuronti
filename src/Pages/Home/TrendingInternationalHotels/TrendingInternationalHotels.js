@@ -13,6 +13,8 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
+import { Pagination } from 'swiper';
+
 const TrendingInternationalHotels = () => {
   const internationalHotels = [
     {
@@ -66,17 +68,31 @@ const TrendingInternationalHotels = () => {
         </div>
         <div className='trending'>
           <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
-            freeMode={true}
+            slidesPerView={1}
+            spaceBetween={10}
             pagination={{
               clickable: true,
             }}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            }}
+            modules={[Pagination]}
             loop={true}
             className='mySwiper'
           >
             {internationalHotels?.map((hotel) => (
-              <SwiperSlide>
+              <SwiperSlide key={hotel.id}>
                 <BookingCard
                   title={hotel.name}
                   stay={hotel.stayFor}
